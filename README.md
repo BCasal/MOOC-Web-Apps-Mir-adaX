@@ -1,7 +1,6 @@
 # Mooc MiríadaX Apps Web · [Demo](http://bcasal.github.io/MOOC-Web-Apps-MiriadaX/)
 
-## Desarrollo en HTML5, CSS y Javascript de
-Apps Web, Android, IOS... (5.ª ed.)
+## Desarrollo en HTML5, CSS y Javascript de Apps Web, Android, IOS... (5.ª ed.)
 
 Este curso capacita para un primer nivel de desarrollo de
 aplicaciones para terminales fijos y móviles

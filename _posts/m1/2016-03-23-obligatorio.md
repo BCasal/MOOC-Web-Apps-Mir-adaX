@@ -35,19 +35,23 @@ de perfilado es muy tosco y genera numerosos problemas:
    secciones semánticas sin definir valores específicos para los atributos
    class, introduciendo un nuevo elemento, &lt;section&gt;,
    el elemento de sección HTML.
+   
 2. Mezclar varios documentos es difícil: la inclusión de un sub-documento en
    un documento principal. Esto se resuelve en HTML<sub>5</sub> con los
    elementos de seccionado (&lt;article&gt;, &lt;section&gt;,
    &lt;nav&gt; y &lt;aside&gt;) son siempre subsecciones de su sección
    ancestra más cercana.
+   
 3. HTML<sub>5</sub> introduce el elemento &lt;hgroup&gt; que oculta
    todos los elementos de cabecera excepto el primero de más alto rango
    (por ejemplo, &lt;hgroup&gt;&lt;h1&gt;Justine&lt;/h1&gt;&lt;h2&gt;Les
    Malheurs de la Vertu&lt;/h2&gt;&lt;/hgroup&gt; crea el perfil 1. Justine).
+   
 4. Un documento puede tener secciones especiales conteniendo información
    relacionado que no es parte del flujo principal. HTML<sub>5</sub>
    introduce el elemento &lt;aside&gt; permitiendo a dichas secciones no
    ser parte del perfil principal.
+   
 5. Hay información relacionada no al documento pero si al sitio entero,
    como logos, menús, tablas de contenidos, o información de derechos
    de autor y notas legales. Para ese propósito, HTML<sub>5</sub> introduce
