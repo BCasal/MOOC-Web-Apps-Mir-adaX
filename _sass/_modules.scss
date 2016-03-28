@@ -1,0 +1,28 @@
+// BOTONES
+
+.download a.boton {
+  display: block;
+  text-align:center;
+  text-decoration: none;
+  background: $link-color;
+  color: $blanco;
+  white-space: nowrap;
+  border-radius: 5px;
+  margin: 1.5rem auto 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid darken($link-color, 20%);
+  @include sombra-texto;
+  padding: 1rem;
+  font-size: 1.4rem;
+  max-width: 320px;
+}
+
+.download a.boton:hover{
+  background: rgba($link-color, 0.5);
+  text-decoration: none;
+  border-color: $link-color;
+}

@@ -1,0 +1,83 @@
+/* ================= *\
+   estilos generales
+\* ================= */
+
+html {
+  height: 100%;
+
+  font: normal 100%/1.4 Verdana, Helvetica, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body  {
+  margin: 0;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+
+  background: $gris;
+  color: $text-color;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid $theme;
+  border-radius: 3px;
+  text-align: left;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  background: lighten($theme, 32%);
+  overflow-x: scroll;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+figure {
+  text-align: center;
+}
+
+img, video {
+	max-width: 100%;
+	height: auto;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}

@@ -1,0 +1,17 @@
+
+
+# Site settings
+
+title: Mooc MiríadaX Apps Web
+description: >
+  Desarrollo en HTML5, CSS y Javascript
+  de Apps Web, Android, IOS... (5.ª ed.)
+
+baseurl: "/MOOC-Web-Apps-MiriadaX" 
+url: "https://github.com/BCasal"
+
+# Build settings
+
+markdown: kramdown
+
+exclude: ["README.md"]

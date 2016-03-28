@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<header class="banner main-article">
+	<h2 class="banner-title">{{ page.title}}</h2>
+	<p class="banner-sub-title">{{ page.sub-title }}</p>
+</header>
+
+<article class="main-article page-article">
+	<h3>Descripción</h3>
+	{{ content }}
+	{% include show.html %}	
+	{% include download.html %}
+</article>

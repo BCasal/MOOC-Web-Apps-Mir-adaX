@@ -1,0 +1,183 @@
+/* ========== *\
+   main title
+\* ========== */
+
+.main-title {
+  margin: 0;
+  padding: 1rem;
+  background: $theme;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $blanco;
+    @include sombra-texto;
+  }
+
+  span {
+    font-size: 1rem;
+    font-weight: normal;
+    display: block;
+    color: $blanco;
+    @include sombra-texto;
+  }
+}
+
+/* ======== *\
+   main nav
+\* ======== */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0.75rem;
+
+  span {
+    @include nav-link;
+  }
+}
+
+.main-nav-link {
+  @include nav-link;
+  text-decoration: none;
+  color: $text-color;
+  border-left: solid 1px darken($theme, 20%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    @include actual-hover;
+  }
+}
+
+.actual {
+  @include actual-hover;
+}
+
+/* ============ *\
+   main section
+\* ============ */
+
+.main-section {
+  margin: 0 0.50rem;
+  letter-spacing: 0.035rem;
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    &:visited {
+      color: darken($link-color, 15%);
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    color: $link-color;
+    @include sombra-texto;
+  }
+
+  @include media-query($on-palm) {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+}
+
+// helper class
+// simula código como texto
+// en el ejemplo del ejercicio
+.clean-pre {
+  pre {
+    border:none;
+    background: $blanco;
+    overflow: hidden;
+  }
+  h4 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  h5 {
+    font-size: 1.3rem;
+    margin: 0 auto 1rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+}
+
+/* ============ *\
+   main article
+\* ============ */
+
+.main-article {
+  background: $blanco;
+  margin-bottom: 0.75rem;
+  padding: 0.50rem;
+  border-radius: 0.50rem;
+  box-shadow: 0 0 3px 1px $theme;
+
+  p {
+    margin: 0;
+    margin-top: 0.25rem;
+  }
+  h3 {
+    color: $link-color;
+    @include sombra-texto;
+  }
+}
+
+.page-article {
+  p {
+    margin: 1rem 0;
+  }
+}
+
+/* ====== *\
+   banner
+\* ====== */
+
+.banner {
+  text-align: center;
+}
+
+.banner-title {
+  border-bottom: solid 3px $theme;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 0.50rem;
+  color: $link-color;
+  @include sombra-texto;
+}
+
+.banner-sub-title {
+  margin: 0;
+  padding-top: 0.50rem;
+}
+
+/* =========== *\
+   main footer
+\* =========== */
+
+.main-footer {
+  text-align: center;
+  background: $theme;
+  color: $blanco;
+  @include sombra-texto;
+  p {
+    line-height: 1;
+  }
+}

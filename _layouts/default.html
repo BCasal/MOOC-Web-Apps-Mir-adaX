@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+  {% include head.html %}
+
+  <body>
+
+    <main>
+
+      <header>
+        <h1 class="main-title">
+          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+          <span>{{ site.description }}</span>
+        </h1>
+        {% include nav.html %}
+      </header>
+      {% if page.url contains 'm1/obligatorio' %}
+      <section class="main-section clean-pre">
+      {% else %}
+      <section class="main-section">
+      {% endif %}
+          {{ content }}
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <p> ~ BCasal · 03/2016 ~ </p>
+    </footer>
+
+  </body>
+</html>
